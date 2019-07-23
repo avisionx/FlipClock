@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel='shortcut icon' href='./assets/favicon.ico' type='image/x-icon' />
+    <meta name="author" content="Avi Garg avisionx">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/flipclock.css">
+    <title>FlipClock</title>
+  </head>
+  <body style="background: black; height: 100vh">
+    
+  	<div class="container h-100">
+  		<div class="row h-100">
+  			<div class="col-12 h-100 d-flex align-items-center justify-content-center" style="overflow: hidden;">
+  				<div class="clock"></div>
+  			</div>
+  		</div>
+  	</div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="./assets/flipclock.js"></script>	
+    <script type="text/javascript">
+    	
+    	var clock;
+			
+			$(document).ready(function() {
+				clock = $('.clock').FlipClock({
+					clockFace: 'TwelveHourClock',
+					showSeconds: false
+				});
+			});
+
+    </script>
+  </body>
+</html>
